@@ -9,9 +9,7 @@ import net.labymod.settings.elements.SettingsElement;
 import net.labymod.settings.elements.StringElement;
 import net.labymod.utils.Material;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.UUID;
 
 public class InventoryWebViewClient extends LabyModAddon {
 
