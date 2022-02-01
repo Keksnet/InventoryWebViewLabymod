@@ -1,0 +1,6 @@
+{
+  "name": "InventoryWebView",
+  "uuid": "%uuid%",
+  "mainClass": "de.neo.ivw.laby.InventoryWebViewClient",
+  "transformerClass": "de.neo.ivw.laby.ExampleAddonTransformer"
+}
