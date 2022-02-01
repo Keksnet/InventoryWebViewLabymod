@@ -2,7 +2,7 @@
 Share your inventory via a simple link!
 
 ## Config
-Inventorypaste URL - the url where to paste your inventory to (default: https://paste.neo8.de/)
+Inventorypaste URL - the url where to paste your inventory to (default: https://paste.neo8.de/inv/)
 
 ## Commands
 All commands are starting with a #
