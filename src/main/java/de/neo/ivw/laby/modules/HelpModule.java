@@ -14,6 +14,13 @@ public class HelpModule implements IModule {
     @Override
     public void execute(ClientPlayerEntity p, String[] args) {
         List<IModule> modules = ModuleManager.getInstance().getModules();
+        if(args.length == 1 && args[0].isEmpty()) {
+            sendMessage(p, "§aAvailable modules:");
+            for (IModule module : modules) {
+                sendMessage(p, "§3" + module.getCommand() + " §a- §3" + module.getShortDescription());
+            }
+            return;
+        }
         if(args.length == 1) {
             if(args[0].equals("help")) {
                 sendMessage(p, "§aHelp page:");

@@ -2,5 +2,9 @@
   "name": "InventoryWebView",
   "uuid": "%uuid%",
   "mainClass": "de.neo.ivw.laby.InventoryWebViewClient",
+  "description": "Share your inventory via a simple link!",
+  "version": 1,
+  "author": "Neo8",
+  "category": 2,
   "transformerClass": "de.neo.ivw.laby.ExampleAddonTransformer"
 }
