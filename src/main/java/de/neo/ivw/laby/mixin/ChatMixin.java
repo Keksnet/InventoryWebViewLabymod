@@ -24,9 +24,7 @@ public abstract class ChatMixin {
     public void injected(String message, CallbackInfo info) {
         System.out.println(message);
         if (ignore) return;
-        System.out.println("A");
         if(message.startsWith("#")) {
-            System.out.println("B");
             if(message.startsWith("##")) {
                 message = message.substring(1);
                 sendChatMessage(message);

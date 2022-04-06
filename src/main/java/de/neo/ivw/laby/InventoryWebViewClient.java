@@ -13,7 +13,7 @@ import java.util.List;
 
 public class InventoryWebViewClient extends LabyModAddon {
 
-    private String invPasteUrl = "https://paste.neo8.de/inv/";
+    private String invPasteUrl = "http://paste.neo8.de/inv/";
 
     private static InventoryWebViewClient instance;
     public static InventoryWebViewClient getInstance() {
@@ -35,7 +35,7 @@ public class InventoryWebViewClient extends LabyModAddon {
     @Override
     public void loadConfig() {
         if(!getConfig().has("paste.inv.url")) {
-            getConfig().addProperty("paste.inv.url", "https://paste.neo8.de/inv/");
+            getConfig().addProperty("paste.inv.url", "http://paste.neo8.de/inv/");
         }
         invPasteUrl = getConfig().get("paste.inv.url").getAsString();
     }
@@ -43,11 +43,11 @@ public class InventoryWebViewClient extends LabyModAddon {
     @Override
     protected void fillSettings(List<SettingsElement> list) {
         list.add(new StringElement(
-                "Inventorypaste URL",
+                "Server URL",
                 this,
                 new IconData(Material.COMPARATOR),
                 "paste.inv.url",
-                "https://paste.neo8.de/inv/"));
+                "http://paste.neo8.de/inv/"));
     }
 
     private void registerModules() {
