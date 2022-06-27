@@ -7,8 +7,10 @@ Inventorypaste URL - the url where to paste your inventory to (default: https://
 ## Commands
 All commands are starting with a #
 
+```txt
 help - Prints the help for all commands
 invpaste [arg] - arg: [inv, next, clear]
          inv - Pastes your inventory
          next - Pastes the next chest that you open
          clear - cancels the waiting for the next inventory
+```
